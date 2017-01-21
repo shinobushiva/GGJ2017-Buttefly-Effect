@@ -1,0 +1,25 @@
+{
+  "name": "Unity-Utils",
+  "version": "0.1.0",
+  "homepage": "https://github.com/shinobushiva/Unity-Utils",
+  "authors": [
+    "Shinobu Izumi <stagesp1@gmail.com>"
+  ],
+  "description": "Utilities for Unity",
+  "keywords": [
+    "utility",
+    "unity",
+    "unity3d"
+  ],
+   "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "CameraSwitcher": "shinobushiva/Unity-CameraSwitcher"
+  }
+}

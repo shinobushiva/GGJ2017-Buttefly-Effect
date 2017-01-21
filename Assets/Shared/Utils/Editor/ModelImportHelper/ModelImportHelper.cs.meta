@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 23a8e7b061af343228ea4d9393b772de
+timeCreated: 1448516747
+licenseType: Pro
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - wireframe: {fileID: 2100000, guid: e5b2a66f224da442083d06b62092050f, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
