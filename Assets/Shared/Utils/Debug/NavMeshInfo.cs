@@ -3,11 +3,11 @@ using System.Collections;
 
 public class NavMeshInfo : MonoBehaviour {
 
-	NavMeshAgent nma;
+	UnityEngine.AI.NavMeshAgent nma;
 
 	// Use this for initialization
 	void Start () {
-		nma = GetComponent<NavMeshAgent>();
+		nma = GetComponent<UnityEngine.AI.NavMeshAgent>();
 	}
 	
 	// Update is called once per frame
@@ -19,7 +19,7 @@ public class NavMeshInfo : MonoBehaviour {
 		if(!nma)
 			return;
 
-		NavMeshPath path = nma.path;
+		UnityEngine.AI.NavMeshPath path = nma.path;
 		if(path != null){
 			Vector3[] poss = path.corners;
 			 

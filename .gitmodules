@@ -1,6 +1,3 @@
-[submodule "Shared/CameraSwitcher"]
-	path = Shared/CameraSwitcher
-	url = https://github.com/shinobushiva/Unity-CameraSwitcher
 [submodule "Assets/Shared/CameraSwitcher"]
 	path = Assets/Shared/CameraSwitcher
 	url = https://github.com/shinobushiva/Unity-CameraSwitcher
