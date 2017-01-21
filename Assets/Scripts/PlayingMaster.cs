@@ -44,6 +44,9 @@ public class PlayingMaster : MonoBehaviour {
 	public void PlaySucceed(){
 
 		SceneManager.LoadScene(nextSceneName);
+	}
 
+	public void Restart(){
+		SceneManager.LoadScene (SceneManager.GetActiveScene().name);
 	}
 }

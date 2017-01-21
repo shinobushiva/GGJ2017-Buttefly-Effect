@@ -7,6 +7,7 @@ public class PickableSuite : MonoBehaviour {
 	private PickableItem item;
 	private PlaceTarget[] targets;
 
+	[HideInInspector]
 	public int solved = 0; 
 
 	// Use this for initialization
