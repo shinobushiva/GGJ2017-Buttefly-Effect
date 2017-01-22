@@ -64,6 +64,8 @@ public class LastSceneManager : MonoBehaviour {
 				audio.clip = ending;
 				audio.Play ();
 
+				FindObjectOfType<Credit> ().PlayCredit ();
+
 				state = 3;
 			}
 		}
