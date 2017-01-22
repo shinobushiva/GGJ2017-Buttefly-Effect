@@ -22,13 +22,19 @@ public class RocketLuncher : MonoBehaviour {
 
 	public string nextSceneName;
 
+	public AudioClip intro;
+
 
 	// Use this for initialization
 	void Start () {
+		FindObjectOfType<AudioSource> ().clip = intro;
+//		FindObjectOfType<AudioSource> ().Play ();
 	}
 	
 	// Update is called once per frame
 	public void Launch () {
+		FindObjectOfType<AudioSource> ().Stop ();
+
 		button.gameObject.SetActive(false);
 		anim.enabled = true;
 		StartCoroutine (Routine ());
@@ -50,7 +56,7 @@ public class RocketLuncher : MonoBehaviour {
 
 		yield return new WaitForSeconds(afterWait);
 
-		SceneManager.LoadScene(nextSceneName);
+		SceneManager.LoadSceneAsync(nextSceneName);
 		
 	}
 }

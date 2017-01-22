@@ -38,8 +38,12 @@ public class StationMaster : MonoBehaviour {
 		
 	}
 
-	public void Completed(){
-		playingMaster.PlayCompleted ();
+	public void Completed(bool f){
+		if (f) {
+			playingMaster.PlaySucceed ();
+		} else {
+			playingMaster.PlayCompleted ();
+		}
 	}
 
 

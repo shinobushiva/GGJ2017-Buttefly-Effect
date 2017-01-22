@@ -55,7 +55,7 @@ public class TrainRun : MonoBehaviour {
 			yield return new WaitForEndOfFrame ();
 		}
 
-		callee.SendMessage ("Completed", SendMessageOptions.DontRequireReceiver);
+		callee.SendMessage ("Completed", true, SendMessageOptions.DontRequireReceiver);
 
 	}
 
@@ -83,7 +83,7 @@ public class TrainRun : MonoBehaviour {
 			yield return new WaitForEndOfFrame ();
 		}
 
-		callee.SendMessage ("Completed", SendMessageOptions.DontRequireReceiver);
+		callee.SendMessage ("Completed", false, SendMessageOptions.DontRequireReceiver);
 
 	}
 

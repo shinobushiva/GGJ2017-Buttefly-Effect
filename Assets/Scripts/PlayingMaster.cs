@@ -12,6 +12,9 @@ public class PlayingMaster : MonoBehaviour {
 	public string nextSceneName;
 	public PickableSuite[] suites;
 	public UnityEvent onPlay;
+	public UnityEvent onSucceed;
+
+	public bool autoNext = true;
 
 
 
@@ -43,10 +46,14 @@ public class PlayingMaster : MonoBehaviour {
 
 	public void PlaySucceed(){
 
-		SceneManager.LoadScene(nextSceneName);
+		if (autoNext) {
+			SceneManager.LoadSceneAsync (nextSceneName);
+		} else {
+			onSucceed.Invoke ();
+		}
 	}
 
 	public void Restart(){
-		SceneManager.LoadScene (SceneManager.GetActiveScene().name);
+		SceneManager.LoadSceneAsync (SceneManager.GetActiveScene().name);
 	}
 }
